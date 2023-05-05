@@ -1,0 +1,1 @@
+document.querySelector("#test-paragraph").style.color = "orange";
