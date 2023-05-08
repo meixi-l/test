@@ -47,31 +47,33 @@ setTimeout(() => {
         
             // Right Arrow Click
             btnArrowRight.addEventListener('click', function() {
+                console.log('right arrow button clicked');
             sideScroll(table, 'right', 25, 100, 10);
 
             // If scrolled to right and there is more to scroll
             if(table.scrollLeft >= 0) {
-                btnArrowLeft.removeClass("btn-hidden");
-                divGradientLeft.removeClass("gradient-hidden");
+                btnArrowLeft.classList.remove("btn-hidden");
+                divGradientLeft.classList.remove("gradient-hidden");
             }
             // If scrolled to right and max is reached
             if(table.scrollLeft > maxScrollLeft-50) {
-                btnArrowRight.addClass("btn-hidden");
-                divGradientRight.addClass("gradient-hidden");
+                btnArrowRight.classList.add("btn-hidden");
+                divGradientRight.classList.add("gradient-hidden");
             }
             });
         
             // Left Arrow Click
             btnArrowLeft.addEventListener('click', function() {
+                console.log('left arrow button clicked');
             sideScroll(table, 'left', 25, 50, 10);
 
             if(table.scrollLeft < 23){
-                btnArrowLeft.addClass("btn-hidden");
-                divGradientLeft.addClass("gradient-hidden");
+                btnArrowLeft.classList.add("btn-hidden");
+                divGradientLeft.classList.add("gradient-hidden");
             }
             if(table.scrollLeft < maxScrollLeft-1) {
-                btnArrowRight.removeClass("btn-hidden");
-                divGradientRight.removeClass("gradient-hidden");
+                btnArrowRight.classList.remove("btn-hidden");
+                divGradientRight.classList.remove("gradient-hidden");
             }
             });
         
@@ -93,20 +95,20 @@ setTimeout(() => {
         
             table.onscroll = ()=>{
             if(table.scrollLeft >= 0) {
-                btnArrowLeft.removeClass("btn-hidden");
-                divGradientLeft.removeClass("gradient-hidden");
+                btnArrowLeft.classList.remove("btn-hidden");
+                divGradientLeft.classList.remove("gradient-hidden");
             }
             if(table.scrollLeft > maxScrollLeft-1) {
-                btnArrowRight.addClass("btn-hidden");
-                divGradientRight.addClass("gradient-hidden");
+                btnArrowRight.classList.add("btn-hidden");
+                divGradientRight.classList.add("gradient-hidden");
             }
             if(table.scrollLeft < 23){
-                btnArrowLeft.addClass("btn-hidden");
-                divGradientLeft.addClass("gradient-hidden");
+                btnArrowLeft.classList.add("btn-hidden");
+                divGradientLeft.classList.add("gradient-hidden");
             }
             if(table.scrollLeft < maxScrollLeft-1) {
-                btnArrowRight.removeClass("btn-hidden");
-                divGradientRight.removeClass("gradient-hidden");
+                btnArrowRight.classList.remove("btn-hidden");
+                divGradientRight.classList.remove("gradient-hidden");
             }
             }
         }
