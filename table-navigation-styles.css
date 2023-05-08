@@ -1,0 +1,58 @@
+.article-table-responsive-script-container {
+	 position: relative;
+}
+ .article-table-responsive-script-container .article-table-responsive-script {
+	 display: block;
+	 overflow-x: hidden;
+	 position: relative;
+}
+ .article-table-responsive-script-container .article-table-responsive-script table {
+	 display: table;
+     margin: 0;
+	 width: 100%;
+	 overflow: hidden;
+}
+ .article-table-responsive-script-container .right-arrow {
+	 -webkit-transform: rotate(45deg);
+	 transform: rotate(45deg);
+	 right: 5px;
+}
+ .article-table-responsive-script-container .left-arrow {
+	 -webkit-transform: rotate(-135deg);
+	 transform: rotate(-135deg);
+	 left: 5px;
+}
+ .article-table-responsive-script-container .right-arrow, .article-table-responsive-script-container .left-arrow {
+	 width: 1em;
+	 height: 1em;
+	 border-top: 0.3em solid #000;
+	 border-right: 0.3em solid #000;
+	 border-radius: 3px;
+	 display: inline-block;
+	 font-style: normal;
+	 position: absolute;
+	 top: 50%;
+	 cursor: pointer;
+	 z-index: 1;
+}
+ .article-table-responsive-script-container .right-arrow.btn-hidden, .article-table-responsive-script-container .left-arrow.btn-hidden {
+	 display: none;
+}
+ .article-table-responsive-script-container .table-gradient-overlap-left, .article-table-responsive-script-container .table-gradient-overlap-right {
+	 position: absolute;
+	 width: 24px;
+	 height: 100%;
+	 top: 1px;
+	 z-index: 1;
+}
+ .article-table-responsive-script-container .table-gradient-overlap-left.gradient-hidden, .article-table-responsive-script-container .table-gradient-overlap-right.gradient-hidden {
+	 display: none;
+}
+ .article-table-responsive-script-container .table-gradient-overlap-left {
+	 background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0) 5.73%, rgba(255, 255, 255, 0.95) 80.21%);
+	 left: 0;
+}
+ .article-table-responsive-script-container .table-gradient-overlap-right {
+	 background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 5.73%, rgba(255, 255, 255, 0.95) 80.21%);
+	 right: 0;
+}
