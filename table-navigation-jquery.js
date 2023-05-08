@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+    var link = document.createElement('link');
+        link.type = 'text/css';
+        link.rel = 'stylesheet';
+        link.href = 'https://cdn.jsdelivr.net/gh/meixi-l/test/table-navigation-styles.css'
+    document.head.appendChild(link);
+
     document.querySelectorAll('.article-table-responsive-container').forEach((tableContainer) => {
         tableContainer.classList.remove('article-table-responsive-container');
     });
