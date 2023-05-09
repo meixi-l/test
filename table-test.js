@@ -10,6 +10,12 @@
         head = document.head || document.getElementsByTagName('head')[0],
         style = document.createElement('style');
     head.appendChild(style);
+    if (style.styleSheet){
+      // This is required for IE8 and below.
+      style.styleSheet.cssText = css;
+    } else {
+      style.appendChild(document.createTextNode(css));
+    }
 
     const tableHeaders = document.querySelectorAll('table th');
     for (i = 0; i < tableHeaders.length; i++) {
