@@ -13,6 +13,6 @@
 
     const tableHeaders = document.querySelectorAll('table th');
     for (i = 0; i < tableHeaders.length; i++) {
-        tableHeaders[i].style.fontWeight = 'red';
+        tableHeaders[i].style.color = 'red';
     }
 })();
