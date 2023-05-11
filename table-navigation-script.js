@@ -48,6 +48,7 @@ setTimeout(() => {
         .article-table-container .article-table-arrow-container-left, .article-table-container .article-table-arrow-container-right {
             display: flex;
             align-items: center;
+            justify-content: center;
             position: absolute;
             width: 28px;
             height: 100%;
